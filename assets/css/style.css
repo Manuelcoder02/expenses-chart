@@ -162,7 +162,7 @@ header {
 .fri-data,
 .sat-data,
 .sun-data {
-  display: none;
+  visibility: hidden;
 }
 .bar:hover {
   opacity: 0.7;
@@ -174,5 +174,5 @@ header {
 .friday:hover > .fri-data,
 .saturday:hover > .sat-data,
 .sunday:hover > .sun-data {
-  display: block;
+  visibility: visible;
 }
