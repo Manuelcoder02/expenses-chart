@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="wrapper">
+      <div class="container">
+        <div class="inner-container">
+          <header class="header">
+            <div class="balance">
+              <h5>My balance</h5>
+              <h1>$921.48</h1>
+            </div>
+            <div class="logo">
+              <img src="./images/logo.svg" alt="two circles" class="logo-img" />
+            </div>
+          </header>
+          <section class="spending">
+            <h1>Spending - Last 7 days</h1>
+            <div class="chart">
+              <div class="monday">
+                <div class="data mon-data">
+                  <p>17.45</p>
+                </div>
+                <div class="bar mon-bar"></div>
+                <p class="day">mon</p>
+              </div>
+              <div class="tuesday">
+                <div class="data tues-data">
+                  <p>34.91</p>
+                </div>
+                <div class="bar tues-bar"></div>
+                <p class="day">tue</p>
+              </div>
+              <div class="wednesday">
+                <div class="data wed-data">
+                  <p>52.36</p>
+                </div>
+                <div class="bar active__bar wed-bar"></div>
+                <p class="day">wed</p>
+              </div>
+              <div class="thursday">
+                <div class="data thur-data">
+                  <p>31.07</p>
+                </div>
+                <div class="bar thur-bar"></div>
+                <p class="day">thu</p>
+              </div>
+              <div class="friday">
+                <div class="data fri-data">
+                  <p>23.39</p>
+                </div>
+                <div class="bar fri-bar"></div>
+                <p class="day">fri</p>
+              </div>
+              <div class="saturday">
+                <div class="data sat-data">
+                  <p>43.28</p>
+                </div>
+                <div class="bar sat-bar"></div>
+                <p class="day">sat</p>
+              </div>
+              <div class="sunday">
+                <div class="data sun-data">
+                  <p>25.48</p>
+                </div>
+                <div class="bar sun-bar"></div>
+                <p class="day">sun</p>
+              </div>
+            </div>
+            <div class="spending-month">
+              <div class="total">
+                <h5>Total this month</h5>
+                <h1>$478.33</h1>
+              </div>
+              <div class="percent">
+                <h6>+2.4%</h6>
+                <h6>from last month</h6>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/sotundenuel" target="_blank"
+        >Sotunde Emmanuel Adefenwa</a
+      >.
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

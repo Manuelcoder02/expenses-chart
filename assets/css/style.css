@@ -1,0 +1,178 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(/assets/webfonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+  font-family: "DM Sans";
+  background-color: hsl(27, 66%, 92%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 500px;
+}
+.inner-container {
+  padding: 3em 0;
+}
+
+header {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 20px;
+  padding: 2em 1em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.balance h5 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 100;
+}
+
+.balance h1 {
+  font-size: 1.7em;
+}
+
+.spending {
+  margin-top: 1em;
+  background-color: hsl(33, 100%, 98%);
+  padding: 2em 1em;
+  border-radius: 20px;
+}
+.spending h1 {
+  font-size: 1.7em;
+}
+
+.chart {
+  display: flex;
+  /* display: grid;
+  grid-template: repeat(1, 1fr) / repeat(7, 1fr); */
+  justify-content: space-between;
+  margin-top: 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+
+.bar {
+  width: 35px;
+  background-color: hsl(10, 79%, 65%);
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.day {
+  color: hsl(28, 10%, 53%);
+}
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday,
+.saturday,
+.sunday {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.monday .bar {
+  height: 50px;
+}
+.tuesday .bar {
+  height: 100px;
+}
+.wednesday .bar {
+  height: 150px;
+}
+.thursday .bar {
+  height: 100px;
+}
+.friday .bar {
+  height: 70px;
+}
+.saturday .bar {
+  height: 120px;
+}
+.sunday .bar {
+  height: 90px;
+}
+
+.spending-month {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  align-items: flex-end;
+}
+
+.total h5 {
+  color: hsl(28, 10%, 53%);
+  padding-bottom: 0.2em;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+
+.total h1 {
+  font-size: 2.4em;
+}
+
+.percent {
+  text-align: right;
+}
+
+.percent h6 {
+  font-size: 1.2em;
+}
+.percent h6:last-child {
+  color: hsl(28, 10%, 53%);
+  font-weight: 100;
+}
+.active__bar {
+  background-color: hsl(186, 34%, 60%);
+}
+.data {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+.mon-data,
+.tues-data,
+.wed-data,
+.thur-data,
+.fri-data,
+.sat-data,
+.sun-data {
+  display: none;
+}
+.bar:hover {
+  opacity: 0.7;
+}
+.monday:hover > .mon-data,
+.tuesday:hover > .tues-data,
+.wednesday:hover > .wed-data,
+.thursday:hover > .thur-data,
+.friday:hover > .fri-data,
+.saturday:hover > .sat-data,
+.sunday:hover > .sun-data {
+  display: block;
+}
