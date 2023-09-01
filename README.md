@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor - Expenses Chart juniorDev](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt/hub?share=true)
+- Live Site URL: [Expenses chart juniorDev](https://expenses-chart-juniordev.vercel.app/)
 
 ## My process
 
